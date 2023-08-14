@@ -51,9 +51,10 @@ export default function SidebarSlide() {
         />
         <h2 className='heading-tertiary'>{title}</h2>
         <p className='subheading2'>{plot}</p>
-        <button className='btn search-btn'>Watch</button>
+        {/* <button className='btn search-btn'
+          onClick={() => navigate('/movie-detail')}
+        >Watch</button> */}
       </div>
-      {/* <div className="modal-backdrop" onClick={handleCloseMovie}></div> */}
     </div>
   )
 }

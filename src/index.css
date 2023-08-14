@@ -678,9 +678,7 @@ body {
 
   .movie-detail-ul{
     font-size: 1.6rem;
-    /* flex-direction: column; */
-    /* gap: 3.2rem; */
-    justify-content: space-between;
+    flex-direction: column;
   }
   .movie-detail-footer{
     gap: 3.2rem;
