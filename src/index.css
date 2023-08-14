@@ -269,7 +269,7 @@ body {
 }
 
 .view-btn{
-  padding: 1rem 4rem;
+  padding: 1rem 4.5rem;
   color: #000;
 }
 
@@ -294,7 +294,7 @@ body {
 
 .movie-div .btn{
   position: absolute;
-  bottom: 15%;
+  bottom: 14%;
   left: 23%
   /* z-index: 998; */
   /* transform: translate(-160%, 550%); */
@@ -436,7 +436,6 @@ body {
 .movie-detail-footer{
   align-self: end;
   display: flex;
-  align-items: center;
   gap: 2.4rem;
 }
 
@@ -663,9 +662,9 @@ body {
 /* BELOW 600px (Landscape Tablets) */
 /**************************/
 @media (max-width: 37.5em){
-  html{
+  /* html{
     font-size: 42%;
-  }
+  } */
   .custom{
     padding: 0 1.2rem;
   }
@@ -680,13 +679,25 @@ body {
   .movie-detail-ul{
     font-size: 1.6rem;
     /* flex-direction: column; */
+    /* gap: 3.2rem; */
+    justify-content: space-between;
+  }
+  .movie-detail-footer{
     gap: 3.2rem;
   }
-  .movie-detail-button{
-    padding: 2rem 6.4rem;
+  .search-btn{
+    padding: 2.4rem 5.2rem;
+  }
+  .movie-detail-heart{
+    font-size: 4.5rem;
+  }
+  .heart-div{
+    background-color: #eee;
+    padding: 1.2rem 1.4rem;
+    border-radius: 11px;
   }
   .movie-detail{
-    padding: 0 3.2rem;
+    padding: 0 1.2rem;
   }
   .scroll{
     overflow: auto;

@@ -8,6 +8,7 @@ import {
 import MovieList from "../features/movies/MovieList";
 import Sidebar2 from "./Sidebar2";
 import SidebarSlide from "../components/SidebarSlide";
+import { useTimeHook } from "../hooks/useTimeHook";
 
 export default function MovieDetail() {
   const { movies, movieId, movie, background } = useSelector(
@@ -29,7 +30,8 @@ export default function MovieDetail() {
     Runtime: runtime,
   } = movie;
   const rating = Ratings[0]?.Value?.split("/")[0];
-  console.log("Please Rate Me", rating);
+  const newRuntime = useTimeHook(Number(runtime?.split(' ')[0]))
+  // console.log(newRuntime)
   return (
     <div className="grid custom">
       <Sidebar2 />
@@ -55,7 +57,7 @@ export default function MovieDetail() {
               </li>
               <li>
                 <HiOutlinePlay className="movie-detail-icon-dark" />
-                {runtime}
+                {newRuntime}
               </li>
             </ul>
             <div className="movie-detail-footer">
